@@ -18,6 +18,3 @@ version:
 
 clean:
 	rm -rf .pytest_cache .coverage coverage.xml
-
-my_job:
-	${cm}

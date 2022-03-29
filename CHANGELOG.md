@@ -1,3 +1,9 @@
+## 0.7.0 (2022-03-29)
+
+### Feat
+
+- another functionality.
+
 ## 0.6.0 (2022-03-29)
 
 ### Feat
