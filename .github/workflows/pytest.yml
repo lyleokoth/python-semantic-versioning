@@ -33,3 +33,16 @@ jobs:
       - name: Run test suite
         run: |
           pipenv run test -v
+      - name: Run Build
+        run: |
+          pipenv run build
+
+  publish:
+    runs-ons: ubuntu-latest
+    steps:
+      - name: Publish package to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/

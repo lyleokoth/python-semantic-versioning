@@ -1,12 +1,16 @@
+PACKAGE=lyle
 BLUE='\033[0;34m'
 
-all: test commit version clean
+all: test build commit-all version clean
 
 test:
 	@echo "\n${BLUE} Running the tests..."
 	@pipenv run test 
 
-commit:
+build:
+	pipenv run build
+
+commit-all:
 	git add .
 	git commit -m "${cm}"
 
@@ -17,4 +21,4 @@ version:
 	git push 
 
 clean:
-	rm -rf .pytest_cache .coverage coverage.xml
+	rm -rf .pytest_cache .coverage coverage.xml build dist ${PACKAGE}.egg-info

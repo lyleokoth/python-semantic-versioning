@@ -16,3 +16,5 @@ python_version = "3.8"
 
 [scripts]
 test = "pytest"
+build = "python3 setup.py sdist bdist_wheel" # Added line here
+deploy = "twine upload dist/*" # Added line here
