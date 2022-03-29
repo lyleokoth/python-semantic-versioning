@@ -1,3 +1,9 @@
+## 0.4.0 (2022-03-29)
+
+### Feat
+
+- added new workflow functionality.
+
 ## 0.3.0 (2022-03-29)
 
 ### Feat
