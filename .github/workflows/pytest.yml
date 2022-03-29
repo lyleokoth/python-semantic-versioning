@@ -1,6 +1,7 @@
 # .github/workflows/app.yaml
 name: PyTest
 on: push
+workflow_dispatch:
 
 jobs:
   test:
